@@ -13,4 +13,31 @@
     tools:context="com.example.chris.chrisyanactivities.DisplayMessageActivity"
     tools:showIn="@layout/activity_display_message">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtDisplayMessage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSendText"
+        android:layout_marginTop="61dp"
+        android:hint="Enter second message"
+        android:layout_below="@+id/txtDisplayMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/button"
+        android:layout_below="@+id/txtSendText"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessageAgain"/>
 </RelativeLayout>
